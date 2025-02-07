@@ -1,0 +1,67 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gaming style gradient */
+	color: #fff; /* Change font color to stand out on dark background */
+}
+
+h1 {
+	margin: 20px 0;
+	color: #ffcc00; /* Bright color for heading */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Text shadow for a 3D effect */
+}
+
+.game-board {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-gap: 5px;
+	justify-content: center;
+	margin: 20px auto;
+	background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a floating effect */
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	background-color: #333; /* Dark cell color */
+	color: #ffcc00; /* Bright color for text */
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: 1px solid #555; /* Border to separate cells */
+	transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.cell:hover {
+	background-color: #444; /* Darker color on hover */
+}
+
+#status {
+	margin: 20px 0;
+	font-size: 1.2rem;
+	color: #ffcc00;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: #ffcc00;
+	color: #333;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #e6b800; /* Darker shade on hover */
+}
